@@ -1,0 +1,23 @@
+{
+  "LambdaFunctionConfigurations": [
+      {
+          "Id": "SalesDataSyncTrigger",
+          "LambdaFunctionArn": "arn:aws:lambda:af-south-1:203918881738:function:sync-sales-data",
+          "Events": ["s3:ObjectCreated:*"],
+          "Filter": {
+              "Key": {
+                  "FilterRules": [
+                      {
+                          "Name": "prefix",
+                          "Value": "input/"
+                      },
+                      {
+                          "Name": "suffix",
+                          "Value": ".csv"
+                      }
+                  ]
+              }
+          }
+      }
+  ]
+}
