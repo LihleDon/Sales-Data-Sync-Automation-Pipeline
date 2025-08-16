@@ -8,7 +8,7 @@ A serverless AWS data pipeline that processes sales data from CSV files uploaded
 - **DynamoDB**: Stores aggregated sales totals (`id`, `total_amount`).
 - **S3 Trigger**: Automatically invokes Lambda on new `.csv` uploads.
 
-## Prerequisites
+## Tools
 - AWS CLI configured with credentials.
 - Python 3.9+ installed locally.
 - PowerShell (Windows).
